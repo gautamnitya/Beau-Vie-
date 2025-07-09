@@ -56,7 +56,7 @@ const Home = () => {
               <p>₹{p.price}</p>
 
               <img
-                src={`/uploads/products/${p.image}`}
+                src={p.image}
 
                 alt={p.name}
                 style={{
