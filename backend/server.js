@@ -7,6 +7,7 @@ const profileRouter = require('./routes/profile');
 const cartRouter = require('./routes/cart');
 const orderRouter = require('./routes/orders');
 const wishListRouter = require('./routes/wishlist');
+const categoryRouter = require('./routes/categories');
 
 dotenv.config(); 
 
@@ -28,6 +29,7 @@ app.use('/api/profile', profileRouter);
 app.use('/api/cart', cartRouter);
 app.use('/api/orders', orderRouter);
 app.use('/api/wishlist', wishListRouter);
+app.use('/api/categories', categoryRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
